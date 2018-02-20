@@ -1,0 +1,452 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+  min-width: 600px; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: 'Tahoma'; }
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/bg-main.png) 0 0 repeat-x;
+  position: relative; }
+  .main .search-wrapper {
+    background-color: rgba(231, 241, 251, 0.7);
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    height: 31px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .main .layout {
+    width: 978px;
+    height: 100vh;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 29%;
+    z-index: 10; }
+    .main .layout .frame {
+      width: 178px;
+      background-color: #fff;
+      height: 17px;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-bottom: -2px;
+      border-top: 1px solid #d9d9d9;
+      border-left: 1px solid #d9d9d9;
+      border-right: 1px solid #d9d9d9; }
+      .main .layout .frame .main-avatar {
+        margin: 3px 2px 0 2px;
+        border: 1px solid #d9d9d9;
+        padding: 2px 2px 0 2px;
+        background-color: #e2edf8;
+        width: 173px;
+        height: 183px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative; }
+        .main .layout .frame .main-avatar .avatar {
+          width: 166px;
+          height: 176px; }
+        .main .layout .frame .main-avatar .bg-ava-img {
+          position: absolute;
+          top: 15px;
+          right: 0; }
+        .main .layout .frame .main-avatar span {
+          display: inline-block;
+          vertical-align: middle; }
+        .main .layout .frame .main-avatar .rating-bar {
+          position: absolute;
+          bottom: 40px;
+          left: 8px; }
+          .main .layout .frame .main-avatar .rating-bar .rating {
+            font-size: 9px;
+            font-weight: 200;
+            line-height: 1.3;
+            color: #000;
+            border: 1px solid #0b467c;
+            width: 39px;
+            background-color: #fff;
+            padding: 0 0 0 5px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+          .main .layout .frame .main-avatar .rating-bar .rating-bg {
+            font-size: 9px;
+            font-weight: 200;
+            line-height: 1.3;
+            color: #000;
+            width: 116px;
+            border: 1px solid #0b467c;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-left: -5px;
+            /* IE10+ */
+            background-image: -ms-linear-gradient(top, #1F588D 0%, #235D94 15%, #3070AC 35%, #3E84C5 65%, #438CD0 100%);
+            /* Mozilla Firefox */
+            background-image: -moz-linear-gradient(top, #1F588D 0%, #235D94 15%, #3070AC 35%, #3E84C5 65%, #438CD0 100%);
+            /* Opera */
+            background-image: -o-linear-gradient(top, #1F588D 0%, #235D94 15%, #3070AC 35%, #3E84C5 65%, #438CD0 100%);
+            /* Webkit (Safari/Chrome 10) */
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1F588D), color-stop(15, #235D94), color-stop(35, #3070AC), color-stop(65, #3E84C5), color-stop(100, #438CD0));
+            /* Webkit (Chrome 11+) */
+            background-image: -webkit-linear-gradient(top, #1F588D 0%, #235D94 15%, #3070AC 35%, #3E84C5 65%, #438CD0 100%);
+            /* W3C Markup */
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#1F588D), color-stop(15%, #235D94), color-stop(35%, #3070AC), color-stop(65%, #3E84C5), to(#438CD0));
+            background-image: linear-gradient(to bottom, #1F588D 0%, #235D94 15%, #3070AC 35%, #3E84C5 65%, #438CD0 100%); }
+        .main .layout .frame .main-avatar .edit {
+          font-size: 11px;
+          font-weight: 200;
+          line-height: 1.3;
+          color: #fff;
+          padding: 9px 27px 8px 27px;
+          display: inline-block;
+          position: absolute;
+          left: 2px;
+          bottom: 3px;
+          background-color: rgba(6, 29, 51, 0.1);
+          /* IE9, iOS 3.2+ */
+          background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #01060b), color-stop(0.25, #030e18), color-stop(0.5, #07213a), color-stop(0.75, #092a49), color-stop(1, #0a3154));
+          /* Android 2.3 */
+          background-image: -webkit-repeating-linear-gradient(top, rgba(1, 6, 11, 0.8) 0%, rgba(3, 14, 24, 0.8) 25%, rgba(7, 33, 58, 0.8) 50%, rgba(9, 42, 73, 0.8) 75%, rgba(10, 49, 84, 0.8) 100%);
+          /* IE10+ */
+          background-image: -o-repeating-linear-gradient(top, rgba(1, 6, 11, 0.8) 0%, rgba(3, 14, 24, 0.8) 25%, rgba(7, 33, 58, 0.8) 50%, rgba(9, 42, 73, 0.8) 75%, rgba(10, 49, 84, 0.8) 100%);
+          background-image: repeating-linear-gradient(to bottom, rgba(1, 6, 11, 0.8) 0%, rgba(3, 14, 24, 0.8) 25%, rgba(7, 33, 58, 0.8) 50%, rgba(9, 42, 73, 0.8) 75%, rgba(10, 49, 84, 0.8) 100%);
+          background-image: -ms-repeating-linear-gradient(top, rgba(1, 6, 11, 0.8) 0%, rgba(3, 14, 24, 0.8) 25%, rgba(7, 33, 58, 0.8) 50%, rgba(9, 42, 73, 0.8) 75%, rgba(10, 49, 84, 0.8) 100%);
+          /* IE8- CSS hack */ }
+      .main .layout .frame .aside-tabs {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px; }
+        .main .layout .frame .aside-tabs li {
+          width: 100%;
+          margin-bottom: 1px;
+          background-color: #fff; }
+          .main .layout .frame .aside-tabs li:hover {
+            /* IE9, iOS 3.2+ */
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #1a5e9d), color-stop(0.25, #18548c), color-stop(0.5, #174571), color-stop(0.75, #072f54), color-stop(1, #05243f));
+            /* Android 2.3 */
+            background-image: -webkit-repeating-linear-gradient(top, #1a5e9d 0%, #18548c 25%, #174571 50%, #072f54 75%, #05243f 100%);
+            /* IE10+ */
+            background-image: -o-repeating-linear-gradient(top, #1a5e9d 0%, #18548c 25%, #174571 50%, #072f54 75%, #05243f 100%);
+            background-image: repeating-linear-gradient(to bottom, #1a5e9d 0%, #18548c 25%, #174571 50%, #072f54 75%, #05243f 100%);
+            background-image: -ms-repeating-linear-gradient(top, #1a5e9d 0%, #18548c 25%, #174571 50%, #072f54 75%, #05243f 100%);
+            /* IE8- CSS hack */ }
+          .main .layout .frame .aside-tabs li a {
+            font-size: 11px;
+            font-weight: 200;
+            line-height: 1.3;
+            color: #6086b6;
+            padding: 10px 0 9px 30px;
+            display: inline-block;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #e6e6e6; }
+            .main .layout .frame .aside-tabs li a:hover {
+              color: #fff;
+              border: 1px solid #000;
+              background: url(../img/bg-tabs-ico.png) 10px 50% no-repeat; }
+      .main .layout .frame .tabs-info {
+        width: 100%; }
+        .main .layout .frame .tabs-info li {
+          display: inline-block;
+          height: 27px;
+          border: 1px solid #dadada;
+          background-color: #fff; }
+          .main .layout .frame .tabs-info li a {
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 1.3;
+            color: #376996;
+            text-align: center;
+            padding: 8px 0 5px 0;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff; }
+            .main .layout .frame .tabs-info li a:hover {
+              font-size: 11px;
+              font-weight: 600;
+              line-height: 1.3;
+              color: #000; }
+        .main .layout .frame .tabs-info li.active a {
+          padding: 8px 0 7px 0;
+          font-size: 11px;
+          font-weight: 600;
+          line-height: 1.3;
+          color: #000; }
+        .main .layout .frame .tabs-info li.tabs-info2 {
+          margin-left: -5px;
+          width: 77px; }
+        .main .layout .frame .tabs-info .tabs-info1 {
+          width: 98px;
+          border-right: none; }
+      .main .layout .frame div.tabs-info1 {
+        margin-bottom: 10px; }
+        .main .layout .frame div.tabs-info1 div {
+          display: block;
+          width: 100%;
+          border-left: 1px solid #dadada;
+          border-right: 1px solid #dadada;
+          background-color: #fff; }
+          .main .layout .frame div.tabs-info1 div span {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: #676768;
+            margin: 5px 5px;
+            width: 100%; }
+          .main .layout .frame div.tabs-info1 div a {
+            font-size: 11px;
+            font-weight: 200;
+            line-height: 1.3;
+            color: #1c568d;
+            display: block;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100%;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            border-bottom: 1px solid #dadada; }
+      .main .layout .frame div.tabs-info2 {
+        margin-bottom: 10px; }
+        .main .layout .frame div.tabs-info2 div {
+          width: 100%;
+          height: 130px;
+          background-color: #fff;
+          display: block; }
+          .main .layout .frame div.tabs-info2 div img {
+            width: 50%;
+            padding-left: 45px;
+            margin-top: 5px;
+            height: 118px; }
+      .main .layout .frame .tabs-events {
+        width: 100%; }
+        .main .layout .frame .tabs-events li {
+          display: inline-block;
+          height: 27px;
+          border: 1px solid #dadada;
+          background-color: #fff; }
+          .main .layout .frame .tabs-events li a {
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 1.3;
+            color: #376996;
+            text-align: center;
+            padding: 8px 0 5px 0;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff; }
+            .main .layout .frame .tabs-events li a:hover {
+              font-size: 11px;
+              font-weight: 600;
+              line-height: 1.3;
+              color: #000; }
+        .main .layout .frame .tabs-events li.active a {
+          padding: 8px 0 7px 0;
+          font-size: 11px;
+          font-weight: 600;
+          line-height: 1.3;
+          color: #000; }
+        .main .layout .frame .tabs-events li.tabs-events2 {
+          margin-left: -5px;
+          width: 77px; }
+        .main .layout .frame .tabs-events .tabs-events1 {
+          width: 98px;
+          border-right: none; }
+      .main .layout .frame div.tabs-events1 div {
+        display: block;
+        width: 100%;
+        border-left: 1px solid #dadada;
+        border-right: 1px solid #dadada;
+        background-color: #fff;
+        border-bottom: 1px solid #dadada; }
+        .main .layout .frame div.tabs-events1 div span {
+          display: inline-block;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 1.3;
+          color: #676768;
+          margin: 5px 5px;
+          width: 100%; }
+        .main .layout .frame div.tabs-events1 div a {
+          font-size: 11px;
+          font-weight: 200;
+          line-height: 1.3;
+          color: #1c568d;
+          display: block;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          padding-bottom: 5px;
+          padding-left: 5px; }
+      .main .layout .frame div.tabs-events2 div {
+        display: block;
+        width: 100%;
+        border-left: 1px solid #dadada;
+        border-right: 1px solid #dadada;
+        background-color: #fff;
+        border-bottom: 1px solid #dadada; }
+        .main .layout .frame div.tabs-events2 div span {
+          display: inline-block;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 1.3;
+          color: #676768;
+          margin: 5px 5px;
+          width: 100%; }
+        .main .layout .frame div.tabs-events2 div a {
+          font-size: 11px;
+          font-weight: 200;
+          line-height: 1.3;
+          color: #1c568d;
+          display: block;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          padding-bottom: 5px;
+          padding-left: 5px; }
+    .main .layout .search {
+      margin-left: 13px;
+      display: inline-block; }
+      .main .layout .search p {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 200;
+        line-height: 1.3;
+        color: #7c848b;
+        text-align: center; }
+      .main .layout .search input {
+        outline: none;
+        border: 1px solid #b0b7be;
+        background: url(../img/search-panel.png) 5px 50% no-repeat;
+        width: 250px;
+        height: 19px;
+        background-color: #fff;
+        vertical-align: middle; }
+      .main .layout .search a {
+        font-size: 11px;
+        font-weight: 200;
+        line-height: 1.3;
+        color: #ffffff;
+        padding: 4px 16px 6px 15px;
+        display: inline-block;
+        margin: 4px 0 1px 0;
+        background-color: #2a669f;
+        border: 1px solid #0b467c;
+        background: #1e5799;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: -webkit-gradient(linear, left top, left bottom, from(#1e5799), color-stop(50%, #2989d8), color-stop(51%, #207cca), to(#7db9e8));
+        background: -o-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+        background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+        /* IE6-9 */ }
+    .main .layout ul.tabs {
+      display: inline-block;
+      float: right; }
+      .main .layout ul.tabs li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: -3px;
+        background-color: #fff;
+        cursor: pointer;
+        border-right: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+        width: 87px;
+        height: 31px; }
+        .main .layout ul.tabs li:hover {
+          /* IE10+ */
+          background-image: -ms-linear-gradient(top, #02111E 0%, #041A2F 25%, #062C4F 45%, #083967 65%, #094379 85%, #094379 95%, #0B5091 100%);
+          /* Mozilla Firefox */
+          background-image: -moz-linear-gradient(top, #02111E 0%, #041A2F 25%, #062C4F 45%, #083967 65%, #094379 85%, #094379 95%, #0B5091 100%);
+          /* Opera */
+          background-image: -o-linear-gradient(top, #02111E 0%, #041A2F 25%, #062C4F 45%, #083967 65%, #094379 85%, #094379 95%, #0B5091 100%);
+          /* Webkit (Safari/Chrome 10) */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #02111E), color-stop(25, #041A2F), color-stop(45, #062C4F), color-stop(65, #083967), color-stop(85, #094379), color-stop(95, #094379), color-stop(100, #0B5091));
+          /* Webkit (Chrome 11+) */
+          background-image: -webkit-linear-gradient(top, #02111E 0%, #041A2F 25%, #062C4F 45%, #083967 65%, #094379 85%, #094379 95%, #0B5091 100%);
+          /* W3C Markup */
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#02111E), color-stop(25%, #041A2F), color-stop(45%, #062C4F), color-stop(65%, #083967), color-stop(85%, #094379), color-stop(95%, #094379), to(#0B5091));
+          background-image: linear-gradient(to bottom, #02111E 0%, #041A2F 25%, #062C4F 45%, #083967 65%, #094379 85%, #094379 95%, #0B5091 100%); }
+        .main .layout ul.tabs li:hover a {
+          color: #fff; }
+        .main .layout ul.tabs li:last-child {
+          margin-right: 0;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          background-color: transparent;
+          width: 27px;
+          padding: 8px 5px;
+          /* IE10+ */
+          background-image: -ms-linear-gradient(bottom, #E0EEFB 0%, #e7f1fb 50%, #F0F5FB 100%);
+          /* Mozilla Firefox */
+          background-image: -moz-linear-gradient(bottom, #E0EEFB 0%, #e7f1fb 50%, #F0F5FB 100%);
+          /* Opera */
+          background-image: -o-linear-gradient(bottom, #E0EEFB 0%, #e7f1fb 50%, #F0F5FB 100%);
+          /* Webkit (Safari/Chrome 10) */
+          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #E0EEFB), color-stop(50, #e7f1fb), color-stop(100, #F0F5FB));
+          /* Webkit (Chrome 11+) */
+          background-image: -webkit-linear-gradient(bottom, #E0EEFB 0%, #e7f1fb 50%, #F0F5FB 100%);
+          /* W3C Markup */
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#E0EEFB), color-stop(50%, #e7f1fb), to(#F0F5FB));
+          background-image: linear-gradient(to top, #E0EEFB 0%, #e7f1fb 50%, #F0F5FB 100%); }
+        .main .layout ul.tabs li a {
+          font-size: 11px;
+          font-weight: 200;
+          line-height: 1.3;
+          color: #6288ac;
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+          padding: 10px 0; }
