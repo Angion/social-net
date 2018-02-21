@@ -1,0 +1,178 @@
+.close {
+  float: right;
+  display: block;
+  overflow: hidden;
+  margin: 7px 7px 0 0;
+  a {
+    display: block;
+    overflow: hidden;
+    width: 79px;
+    height: 27px;
+    background-image: url('../img/ico-close.png');
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    background-position: 51px 0;
+    p {
+      margin: 7px 0 0 0;
+      color: #74787f;
+      font-size: 11px;
+    }
+  }
+}
+.d-header {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to bottom, #232b39 0%,#2b3546 100%);
+    .layout {
+      width: 980px;
+      margin: 0 auto;
+      .logo-1 {
+        display: block;
+        overflow: hidden;
+        float: left;
+        margin: 10px 0 0 0;
+      }
+      ul {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        left: 61px;
+          li {
+            background-image: -webkit-linear-gradient(top, #314763 0%, #314763 5%, #314763 10%, #304156 15%, #2D3A49 20%, #3E4752 25%, #25313F 50%, #3E4752 75%, #2D3A49 80%, #304156 85%, #314763 90%, #143858 95%, #354255 100%);
+            display: inline-block;
+            border: 1px solid #000;
+            border-top-style: none;
+            width: 140px;
+            height: 40px;
+            box-sizing: border-box;
+            margin: 0 -4px 0 0;
+
+              a {
+                padding: 8px 0 9px 0;
+                display: block;
+                text-align: center;
+                font-size: 11px;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                  &:hover {
+                    color: #42b4ff;
+                  }
+                    .logo {
+                      display: block;
+                      overflow: hidden;
+                      float: left;
+                      margin: 5px auto;
+                      width: 20px;
+                      height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.b-header {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  background-image: url('../img/bg-pattern.png');
+  background-repeat: repeat-x;
+  background-color: #206fb8;
+    .layout {
+      width: 980px;
+      margin: 0 auto;
+      .account {
+        display: block;
+        overflow: hidden;
+          .logo {
+            width: 158px;
+            height: 57px;
+            margin: 10px 20px 0 0;
+            display: block;
+            overflow: hidden;
+            float: left;
+              a {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          .name {
+            display: block;
+            overflow: hidden;
+            margin: 22px 20px 0 0;
+              p {
+                font-size: 24px;
+                color: #fff;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  background-image: url('../img/bg-pattern.png');
+  background-repeat: repeat-x;
+  background-color: #206fb8;
+    .layout {
+      width: 980px;
+      margin: 0 auto;
+      .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+          .text {
+            display: block;
+            overflow: hidden;
+
+              p {
+                display: inline-block;
+                overflow: hidden;
+                font-size: 11px;
+                color: #fff;
+                }
+                span {
+                  display: inline-block;
+                  overflow: hidden;
+                  font-size: 11px;
+                  color:#6c8ab0;
+                }
+                a {
+                  width: 100%;
+                  font-size: 11px;
+                  color: #abd6ff;
+                }
+                  ul {
+                    display: inline-block;
+                    overflow: hidden;
+                      li {
+                        display: inline-block;
+                        overflow: hidden;
+                        margin: 0 0 0 50px;
+                        a {
+                          width: 100%;
+                          color: #91a2b8;
+                          width: 100%;
+                        }
+              }
+            }
+          }
+        }
+      }
+    }
+.dev {
+  display: block;
+  overflow: hidden;
+  margin: 5px 0 0 0;
+  a {
+    font-size: 11px;
+    color: #aad6ff;
+  }
+}
